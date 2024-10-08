@@ -10,19 +10,8 @@
      }
 
      article {
-         margin: 20px;
          padding: 12px;
          border: 1px solid black;
-     }
-
-     .container {
-         background-color: lightgreen;
-         display: flex;
-         align-items: center;
-         flex-direction: column;
-         margin: auto;
-         padding: 20px;
-         width: 75%;
      }
 
      figure {
@@ -32,12 +21,15 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html">Home</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blogg</a></li>
+        </ul>
       </nav>
     </header>
+    <main>
     <h1>Blogg</h1>
-    <div class="container">
     <article>
       <aside>
         <h2>Repudiandae molestias</h2>
@@ -153,10 +145,10 @@
 
       </section>
     </article>
-    </div>
+    </main>
 
     <footer>
-      <a href="index.html">Tillbaka</a>
+      <p>Copyright &copy; 2024 Olle Mattsson</p>
     </footer>
   </body>
 </html>

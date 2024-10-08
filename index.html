@@ -7,18 +7,29 @@
   </head>
   <body>
     <header>
-      <h1>Olle Mattsson</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="recept.html">Ostkaka</a>
-        <a href="sport.html">Cykel</a>
-        <a href="blog.html">Blogg</a>
-        <a href="https://github.com/rymdolle">rymdolle</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="projects.html">Projects</a>
+            <ul class="sub-menu">
+              <li><a href="recept.html">Ostkaka</a></li>
+              <li><a href="sport.html">Cykel</a></li>
+              <li><a href="blog.html">Blogg</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </header>
+
+    <main>
+      <h1>Olle Mattsson</h1>
+    </main>
+
     <footer>
-      <code>There is no place like ::1</code>
+      <p><code>There is no place like ::1</code></p>
+      <p>Copyright &copy; 2024 Olle Mattsson</p>
     </footer>
   </body>
 </html>
