@@ -57,7 +57,7 @@ main {
     background-color: white;
     margin: 0 12vw 0 12vw;
     padding: 4vh 2vw 4vh 2vw;
-    min-height: 20vh;
+    min-height: 40em;
 }
 
 footer {
@@ -71,4 +71,13 @@ footer {
 h1 {
     color: black;
     margin-left: 1em;
+}
+
+img.avatar {
+    border-radius: 50%;
+}
+
+aside.avatar {
+    float: right;
+    margin-left: 4em;
 }
