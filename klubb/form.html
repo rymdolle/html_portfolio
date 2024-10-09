@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <title>Anmälan</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="form.html" class="active">Formulär</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Formulär</h1>
+
+      <form method="post" action="form.html">
+        <table>
+          <tr>
+            <td><label for="pname">Förälder:</label></td>
+            <td><input class="required" type="text" id="pname" name="pname" placeholder="ex. Allan Svensson" /></td>
+          </tr>
+          <tr>
+            <td><label for="cname">Barnets namn:</label></td>
+            <td><input class="required" type="text" id="cname" name="cname" placeholder="ex. Håkan Svensson" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Epost:</label></td>
+            <td><input class="required" type="email" id="email" name="email" placeholder="ex. namn@example.com" /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Telefon:</label></td>
+            <td><input class="required" type="tel" id="phone" name="phone" placeholder="ex. 070-123 45 67" /></td>
+          </tr>
+          <tr>
+            <td><label for="allergi">Allergier:</label></td>
+            <td><input type="text" id="allergi" name="allergi" /></td>
+          </tr>
+          <tr>
+            <td><label for="grupp">Grupp:</label></td>
+            <td>
+              <select id="grupp" name="grupp">
+                <option>-</option>
+                <option>Grupp 1</option>
+                <option>Grupp 2</option>
+                <option>Grupp 3</option>
+                <option>Grupp 4</option>
+                <option>Grupp 5</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Betalning:</label></td>
+            <td>
+              <fieldset>
+                <legend>Betalningsmetod</legend>
+                <label for="swish">Swish</label><input type="radio" id="swish" name="betalning" value="swish" />
+                <label for="faktura">Faktura</label><input type="radio" id="faktura" name="betalning" value="fakura" />
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+
+        <input type="submit" value="Skicka" />
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024 Sportsakademin</p>
+    </footer>
+  </body>
+</html>
