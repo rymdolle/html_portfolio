@@ -80,7 +80,7 @@ aside.avatar {
 
 section.project ul {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     list-style-type: none;
     padding: 8px;
     margin: 8px;
@@ -91,10 +91,6 @@ section.project ul {
 }
 
 section.project li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #ddd;
     border-radius: 8px;
     padding: 6px;
@@ -103,6 +99,33 @@ section.project li {
     box-shadow: 0px 4px 8px 0px rgba(255,255,255,0.2);
 }
 
+section.project li:hover {
+    background-color: #dde;
+    box-shadow: none;
+}
+
+figcaption {
+    font-style: italic;
+    margin: 0;
+    padding: 3px;
+    color: white;
+    background-color: black;
+}
+
+figure {
+    float: right;
+    margin: 0;
+    padding: 4px;
+}
+
 a img {
     display: block;
+}
+
+a {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
 }
