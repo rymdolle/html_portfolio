@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+a {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
 .navbar {
     background-color: #333;
     padding-left: 12vw;
@@ -118,14 +126,14 @@ figure {
     padding: 4px;
 }
 
-a img {
+.project a img {
     display: block;
 }
 
-a {
+.project a {
     color: #333;
 }
 
-a:visited {
+.project a:visited {
     color: #333;
 }
