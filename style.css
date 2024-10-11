@@ -63,6 +63,7 @@ main {
     margin: 0 12vw 0 12vw;
     padding: 4vh 2vw 4vh 2vw;
     min-height: 40em;
+    color: #fff;
 }
 
 footer {
@@ -136,4 +137,32 @@ figure {
 
 .project a:visited {
     color: #333;
+}
+
+[class^="parallax-"] {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2em;
+    margin-bottom: 4em;
+    border-radius: 20px;
+}
+
+.parallax-1 {
+    background-image: url(img/monkey.jpg);
+}
+
+.parallax-2 {
+    background-image: url(img/Voluptas\ quia.jpg);
+    border-radius: 15px 150px;
+}
+
+.parallax-3 {
+    background-image: url(img/Minima\ facere.jpg);
+}
+
+[class^="parallax-"] p {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1em solid rgba(0, 0, 0, 0.0);
+    border-radius: 8px;
 }
