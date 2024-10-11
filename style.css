@@ -119,11 +119,20 @@ figcaption {
     color: white;
     background-color: black;
 }
-
 figure {
-    float: right;
-    margin: 0;
+    margin: 4px;
     padding: 4px;
+}
+
+figure img {
+    border-radius: 8px 8px 0 0;
+}
+
+.project ul :nth-child(odd) figure {
+    float: right;
+}
+.project ul :nth-child(even) figure {
+    float: left;
 }
 
 .project a img {
