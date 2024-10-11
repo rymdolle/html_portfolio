@@ -141,11 +141,10 @@ figure {
 [class^="parallax-"] {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
     padding: 2em;
     margin-bottom: 4em;
     border-radius: 20px;
-    background-size: 100% 100%;
 }
 
 .parallax-1 {
