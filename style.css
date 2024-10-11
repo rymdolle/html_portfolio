@@ -63,7 +63,6 @@ main {
     margin: 0 12vw 0 12vw;
     padding: 4vh 2vw 4vh 2vw;
     min-height: 40em;
-    color: #fff;
 }
 
 footer {
@@ -146,6 +145,7 @@ figure {
     padding: 2em;
     margin-bottom: 4em;
     border-radius: 20px;
+    background-size: 100% 100%;
 }
 
 .parallax-1 {
@@ -165,4 +165,5 @@ figure {
     background-color: rgba(0, 0, 0, 0.4);
     border: 1em solid rgba(0, 0, 0, 0.0);
     border-radius: 8px;
+    color: white;
 }
