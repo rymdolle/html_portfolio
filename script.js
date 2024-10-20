@@ -1,20 +1,14 @@
-function bounce() {
-    const image = document.getElementById('monkey');
-    let scale = 1.0;
-    let direction = 1;
-    const speed = 0.01;
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    let scale = 0;
+    if (entry.isIntersecting)
+      scale = 1;
+    entry.target.style.transform = `scale(${scale})`;
+  });
+});
 
-    function zoom() {
-      scale += direction * speed;
-      image.style.transform = `scale(${scale})`;
-
-      if (scale > 1 || scale < 0.2)
-        direction *= -1;
-
-      requestAnimationFrame(zoom);
-    }
-
-    zoom();
+for (const img of document.getElementsByTagName('img')) {
+  img.style.transform = 'scale(0)';
+  img.style.transition = 'transform 0.5s ease-out';
+  observer.observe(img);
 }
-
-bounce();
